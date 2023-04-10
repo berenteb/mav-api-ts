@@ -1,0 +1,43 @@
+name: Code Style Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  eslint:
+    name: ESLint Check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Dev Dependencies
+        run: |
+          npm install --only=dev
+
+      - name: Run ESLint
+        run: npm run lint
+  prettier:
+    name: Prettier Check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Dev Dependencies
+        run: |
+          npm install --only=dev
+
+      - name: Run Prettier
+        run: npm run prettier
