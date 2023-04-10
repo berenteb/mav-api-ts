@@ -1,5 +1,10 @@
 {
-  "name": "mav-api",
+  "name": "mav-api-ts",
+  "description": "Unofficial, experimental MÁV API library based on the requests by jegy.mav.hu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berenteb/mav-api-ts"
+  },
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
