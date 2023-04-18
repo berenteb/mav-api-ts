@@ -1,11 +1,12 @@
 {
   "name": "mav-api-ts",
   "description": "Unofficial, experimental MÁV API library based on the requests by jegy.mav.hu",
+  "keywords": ["mav", "rail", "api", "hungary", "typescript", "axios", "timetable", "train", "station"],
   "repository": {
     "type": "git",
     "url": "https://github.com/berenteb/mav-api-ts"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",

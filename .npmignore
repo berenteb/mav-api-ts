@@ -1,4 +1,6 @@
-!dist
-.github
-tests
-src
+**/*
+!/dist/**
+!index.js
+!index.d.ts
+!LICENSE
+!README.md
